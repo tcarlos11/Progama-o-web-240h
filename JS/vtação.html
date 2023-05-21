@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Frajola vs Piu</h3>
+    <script>
+        var votos = 0;
+        var f =  0;
+        var p = 0;
+
+
+while(votos < 5){
+    voto = prompt("DIGITE '1' PARA FRAJOLA, '2' PARA PIU PIU.");
+    if(voto == 1 ){
+        f++;
+    }
+    else if ( voto == 2){
+        p++;
+    }
+votos++;
+}
+
+if(f < p){
+    var df = p - f;
+    alert("PIU PIU GANHOU COM "+p+" VOTOS, COM "+df+" VOTOS AMAIS QUE FRAJOLA ")
+}
+else{
+    var dp = f - p;
+    alert("FRAJOLA GANHOU COM "+f+" VOTOS, COM "+dp+" VOTOS AMAIS QUE  PIU PIU ")
+}
+
+</script>
+</body>
+</html>
