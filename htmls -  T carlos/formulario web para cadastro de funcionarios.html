@@ -1,0 +1,103 @@
+<html>
+<head>
+        <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>LGAMES</title>
+    <link rel="icon" type="image/png" href="lgames.png">
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+<fieldset><legend>Dados Pessoais</legend>
+ <table>
+   <tr><td>Nome Completo:</td>
+    <td><input autofocus type="text" name="nome"></td>
+</tr>
+    <tr>    
+    <td>RG:</td><td><input onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="campo_cpf" placeholder="Apenas Números"/ required maxlength="7">
+    </td></tr>
+    <tr>
+        <td>CPF:</td><td><input onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="campo_cpf" placeholder="Apenas Números"/ required maxlength="11"></td>
+    </tr>
+    <tr><td>Data de Nascimento:</td><td><input type="date"></td></tr>
+</table>
+
+<h5>Estado Civil:</h5>
+    <select>
+        <option value="Solteiro">Solteiro(a)</option>
+        <option value="Casado">Casado(a)</option>
+        <option value="Outro">Outro</option> 
+    </select>
+
+
+<br>
+
+<h4>Endereço:</h4>
+    
+<table>
+    <tr>
+<td>Cidade:</td><td><input  type="text" name="Cidade:">
+    Estado:<select>
+        <option value="AC">AC</option>
+        <option value="AL">AL</option>
+        <option value="AP">AP</option>
+        <option value="AM">AM</option>
+        <option value="BA">BA</option>
+        <option value="CE">CE</option>
+        <option value="DF">DF</option>
+        <option value="ES">ES</option>
+        <option value="GO">GO</option>
+        <option value="MT">MT</option>
+        <option value="MS">MS</option>
+        <option value="MA">MA</option>
+        <option value="MG">MG</option>
+        <option value="PA">PA</option>
+        <option value="PB">PB</option>
+        <option value="PR">PR</option>
+        <option value="PE">PE</option>
+        <option value="PI">PI</option>
+        <option value="RJ">RJ</option>
+        <option value="RN">RN</option>
+        <option value="RS">RS</option>
+        <option value="RN">RN</option>
+        <option value="RO">RO</option>
+        <option value="SC">SC</option>
+        <option value="SP">SP</option>
+        <option value="SE">SE</option>
+        <option value="TO">TO</option>
+        </select>
+    </td>
+    </tr>
+    <tr>
+   <td>Naturalidade:</td><td><input  type="text" ></td></tr>
+   <tr>
+    <td>Rua:</td><td><input  type="text" ></td></tr>
+    <tr>
+        <td>N°:</td><td><input type="number" placeholder="Apenas Números"/ required></td></tr>
+        <tr>
+            <td>Bairro:</td><td><input type="text" / required></td></tr>
+</table>
+<h4>Escolaridade:</h4><select>
+    <option value=" Ensino Medio"> Ensino Medio</option>
+    <option value="Ensino Fundamental I">Ensino Fundamental I</option>
+    <option value="Ensino Fundamental II">Ensino Fundamental II</option>
+    <option value="Ensino superior">Ensino Superior</option>
+</select>
+    <input type="radio"  value="M">Cursando
+    <input type="radio"  value="F">Completo<br>
+
+<td><h4>Contato:</h4>
+    <table>
+        <tr>
+            <td>Numero de Telefone:</td>
+            <td><input type="tel"  placeholder="Apenas Números"/ required maxlength="11"></td>
+ </tr>
+    <tr>
+        <td>Email:</td><td><input  type="text" ></td>
+    </tr>
+</table>
+<button>Limpar</button>
+<button>Salvar</button>
+</fieldset>
+
+</body>
+</html>
