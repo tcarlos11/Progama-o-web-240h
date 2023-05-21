@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+      <title>Cadastro</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    </head>
+    <body>
+      <div class="container mt-5">
+        <form action="testebanco.php" method="POST">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control"  name="neme" maxlength="200">
+          </div>
+          <div class="form-group">
+            <label for="nome">Usuario:</label>
+            <input type="text" class="form-control"  name="usuario" maxlength="30">
+          </div>
+          <div class="form-group">
+            <label for="number">Telefone:</label>
+            <input type="number" class="form-control" maxlength="11" name="telefone">
+          </div>
+          <div class="form-group">
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" class="form-control datepicker" name="nascimento">
+          </div>              Sexo:
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="sexo" value="Masculino" >
+              <label class="form-check-label" >Masculino</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="sexo" value="Feminino">
+              <label class="form-check-label" >Feminino</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="sexo"  value="Outro">
+              <label class="form-check-label" >Outro</label>
+            </div>
+            <div class="form-group">
+                  <label for="nivel-escolaridade">Escolaridade:</label>
+                  <select name="escol"  class="form-control">
+                    <option name="escol" for="medio" >Ensino Médio</option>
+                    <option  name="escol" value="fundamental" >Ensino Fundamental</option>
+                    <option  name="escol" value="superior" >Ensino Superior</option>
+                  </select>
+                </div>
+    
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control"  name="email" maxlength="70" >
+          </div>
+          <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" class="form-control" name="senha" maxlength="30">
+          </div>
+          <button type="submit" class="btn btn-primary" >Enviar</button>
+        </form>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<title>Leitura de Números</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .small-label {
+            font-size: 19px;
+            border-radius: 25%;
+
+          }
+       .center{
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+       }
+    </style>
+</head>
+<body>
+	<div class="container mt-5 center">
+		<h5>Descubra a Media.</h5>
+		<form action="media.php" method="POST">
+			<div class="form-group">
+				<label for="numero1">Nota 1:</label>
+				<input type="number" min="0" max="10" class="control-label small-label" name="n1" placeholder="Nota...">
+			</div>
+			<div class="form-group">
+				<label for="numero2">Nota 2:</label>
+				<input type="number" min="0" max="10" class="control-label small-label" name="n2" placeholder="Nota..." >
+			</div>
+			<div class="form-group">
+				<label for="numero3">Nota 3:</label>
+				<input type="number" min="0" max="10" class="control-label small-label" name="n3" placeholder="Nota..." >
+			</div>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+		</form>
+	</div>
+
+</body>
+</html>
