@@ -1,0 +1,6 @@
+Sorteador
+
+1.pegar nomes no BD e colocar num vetor
+2.criar um rand com o range com a quant de nomes do vetor
+3.usar o resultado do rand para definir o vencedor do sorteio
+4.buscar o nome no vetor e mostra-lo

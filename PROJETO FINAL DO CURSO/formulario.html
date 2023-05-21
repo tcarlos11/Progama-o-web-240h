@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Promoção</title>
+    <!-- Favicon-->
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="assets/img/navbar-logo.png" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/styleForm.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <div class="col-6 col-md-3">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/img/navbar-logo form.png" alt="logo" /></a>
+            </div>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#top-page">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formulario.html">Cadastre-se</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./game/game.html">Game</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5"></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 mt-md-5">
+            <img class="img-fluid" src="./assets/img/promo-premios.png">
+        </div>
+
+        <!-- Formulário HTML -->
+        <div class="col-md-6 col-sm-12 mt-5 ">
+            <div class="bg-transparence p-3 col-md-6 col-sm-12 mt-md-5">
+                <form action="formulario.php" method="POST">
+                    <h1>Cadastre-se No Sorteio</h1>
+                    <div class="col-md-11 my-2">
+                        <label for="inputEmail">Nome</label>
+                        <input type="text" class="form-control" id="inputNome" name="nome" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="col-md-11 my-2">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="col-md-11 my-2">
+                        <label for="inputAddress">Cpf</label>
+                        <input type="number" class="form-control" id="inputCpf" name="cpf" placeholder="Seu Cpf" required>
+                    </div>
+                    <div class="col-md-11 my-2">
+                        <label for="inputAddress">Telefone</label>
+                        <input type="tel" class="form-control" id="inputTelefone" name="telefone" placeholder="Numero de Telefone" required>
+                    </div>
+                    <div class="col-md-11 my-2">
+                        <label for="inputAddress">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress" name="endereco" placeholder="Rua, Bairro" required>
+                    </div>
+                    <div class="container-fluid mb-5">
+                        <div class="d-flex justify-content-center my-3">
+                            <input class="btn btn-primary"
+                                style="background:#fff; color:#555; margin-left:auto; margin-right:auto; display:block;"
+                                type="submit" value="Prosseguir">
+                        </div>
+                    </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const mensagem = urlParams.get("msg")
+    if(mensagem == "S") {
+        alert("Cadastro efetuado com sucesso");
+    }
+    if(mensagem == "N") {
+        alert("Cadastro não realizado");
+    }
+    </script>
+
+</html>
